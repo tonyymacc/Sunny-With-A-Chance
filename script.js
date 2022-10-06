@@ -50,7 +50,7 @@ function showWeatherData (data){
     data.daily.forEach((day, idx) => {
         if(idx == 0){
             currentTempEl.innerHTML = `
-            <img src="http://openweathermap.org/img/wn//${day.weather[0].icon}@4x.png" alt="weather icon" class="w-icon">
+            <img src="https://openweathermap.org/img/wn//${day.weather[0].icon}@4x.png" alt="weather icon" class="w-icon">
             <div class="current-temp">
             TMP: ${data.current.temp}&#176; F
             </div>
@@ -65,7 +65,7 @@ function showWeatherData (data){
             otherDayForcast += `
             <div class="weather-forecast-item">
                 <div class="day">${window.moment(day.dt*1000).format('ddd')}</div>
-                <img src="http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="w-icon">
+                <img src="https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png" alt="weather icon" class="w-icon">
                 <div class="temp"> ${day.temp.night}&#176; F</div>
                 <div class="temp"> ${day.temp.day}&#176; F</div>
             </div>
